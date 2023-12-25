@@ -1,0 +1,81 @@
+.createField {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 15px;
+  padding: 15px;
+  background-color: #F1F1F1;
+  border-radius: 7px;
+}
+.fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  margin-top: 35px;
+}
+.title {
+  background: none;
+  border-bottom: 1px solid rgb(104, 103, 103);
+  width: 90%;
+  color: black;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-bottom: 7px;
+}
+.title::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.area {
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  outline: none;
+  overflow-y: auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: black;
+  resize: none;
+  background-color: #F1F1F1;
+}
+.area::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.hidden{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pad: 0;
+  margin: 0;
+  line-height: 0;
+}
+.img{
+  width: 80px;
+  height: 80px;
+}
+.forImg{
+  width: 90px;
+  height: 90px;
+}
+.clip{
+  width: 25px;
+  height: 25px;
+  margin-right: 60%;
+  cursor: pointer;
+}

@@ -1,27 +1,146 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Tektur:wght@400;500;600;700&display=swap");
+html {
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: white;
+  color: #ffffff;
+}
+
+.main__container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100vh;
+}
+
+.h1-30-jose {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+}
+.h1-60-jose {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  color: black;
+}
+.h1-20-jose {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.h1-15-mont {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+.h1-17-jose {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+}
+.h1-16-mont {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
+.h1-17-mont {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+}
+.h1-40-jose {
+  font-family: "Tektur", cursive;
+  font-size: 40px;
+  color: black;
+}
+.active {
+  display: flex !important;
+}
+.authModal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.base-input {
+  background-color: #f0f0f1;
+  width: 350px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding-left: 10px;
+}
+.base-button{
+  width: 350px;
+  background-color: #5353f7;
+  height: 40px;
+  border-radius: 7px;
+}
+.desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+.desc2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: black;
+}
+.error {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: red;
+}
+.mart {
+  margin-top: 30px;
+}
+.mart2 {
+  margin-top: 10px;
+}
+.mart100 {
+  margin-top: 100px;
+}
+.marR {
+  margin-right: 5px;
+}
+
+.link {
+  color: #5353f7;
+  cursor: pointer;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.hide {
+  display: none !important;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+}
+.ramka {
+  border: 1px solid black;
+}
+.marb{
+  margin-bottom: 20px;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(182, 180, 180);
+}
+::-webkit-scrollbar-thumb{
+  background-color: #5353f7;
+  border-radius: 8px;
 }
